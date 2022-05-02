@@ -15,5 +15,3 @@ The purpose of this project is Part2 or the Advanced course by Travis Cuzick.
 
 - Github - [lundeen-bryan](https://github.com/lundeen-bryan)
 - LinkedIn - [BryanLundeen](https://www.linkedin.com/in/bryanlundeen/)
-
-##CuzickSql2
