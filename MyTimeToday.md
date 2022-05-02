@@ -16,7 +16,12 @@
 - `12:43` 10-Row_Number_Function
 - `12:55` //_Break_ //_internet down_
 - `13:00` //_Break_
+- `13:18` 10-Row_Number_Function
 - `13:19` 10-Row_Number_Function
 - `13:20` //_Break_ //_Lunch_
-
+- `14:34` //_Break_
+- `14:35` 11-Row_Number_Exercises
+- `16:03` 11-Row_Number_Exercises
+- `16:03` 12-Rank_Dense_Rank_Function
+- `16:38` 12-Rank_Dense_Rank_Function
 
