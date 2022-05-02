@@ -11,6 +11,11 @@ The purpose of this project is Part2 or the Advanced course by Travis Cuzick.
 
 ---
 
+<<<<<<< HEAD
+=======
+---
+
+>>>>>>> 128c0bc51af29071d835e7e1631e6c86a4aefba2
 ## Author Info
 
 - Github - [lundeen-bryan](https://github.com/lundeen-bryan)
