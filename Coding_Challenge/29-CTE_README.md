@@ -53,7 +53,11 @@ Travis gave two solutions so that by example, we would know why it is better to 
 
 My code for this approach is modified from the code in the course: [Subquery-Approach](../Videos/29-CTEs_Part_1_of_2-Using_Subquery_Approach.sql)
 
+<<<<<<< HEAD
 The subquery approach takes the same query twice and joins them both, but the 2nd query uses a DATEFROMPARTS function to get the previous month's total due sum. It was helpful for me to open the query results in Excel which allowed me to look at the table more clearly, sort, filter, etc. I didn't sort Travis' demo query by month, which was helpful to see in Excel. I changed the data type to currency there and you'll see the result below.
+=======
+The subquery approach takes the same query twice and joins them both, but the 2nd query uses a DATEFROMPARTS function to get the previous month's total due sum. It was helpful for me to open the query results in Excel which allowed me to look at the table more clearly, sort, filter, etc. In Travis' demo query, it doesn't sort by month, which was helpful to see in Excel. I changed the data type to currency there and you'll see the result below.
+>>>>>>> 67a59155cd4629d61246dc418cda2b8ea8bc923e
 
 ![CTE_result_image](../img/CTE_.png)
 
