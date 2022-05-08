@@ -16,7 +16,7 @@
 
 ## Introduction
 
-My general thoughts had to be laid out here because I recognize the power of using common data expressions (CTEs) but initially felt very confused learning them. I was so confused that I thought I must have missed something much earlier, so I started the course from scratch. This was of course very frustrating. Eventually, I penned my thoughts in this markdown file.
+My general thoughts had to be laid out here because I recognize the power of using common table expressions (CTEs) but initially felt very confused learning them. I was so confused that I thought I must have missed something much earlier, so I started the course from scratch. This was of course very frustrating. Eventually, I penned my thoughts in this markdown file.
 
 ---
 
@@ -51,7 +51,9 @@ Travis gave two solutions so that by example, we would know why it is better to 
 
 ### The Subquery Approach
 
-The subquery approach takes the same query twice and joins them both, but the 2nd query uses a DATEFROMPARTS function to get the previous month's total due sum. It was helpful for me to open the query results in Excel which allowed me to look at the table more clearly, sort, filter, etc. In Travis' demo query, it doesn't sort by month, which was helpful to see in Excel. I changed the data type to currency there and you'll see the result below.
+My code for this approach is modified from the code in the course: [Subquery-Approach](../Videos/29-CTEs_Part_1_of_2-Using_Subquery_Approach.sql)
+
+The subquery approach takes the same query twice and joins them both, but the 2nd query uses a DATEFROMPARTS function to get the previous month's total due sum. It was helpful for me to open the query results in Excel which allowed me to look at the table more clearly, sort, filter, etc. I didn't sort Travis' demo query by month, which was helpful to see in Excel. I changed the data type to currency there and you'll see the result below.
 
 ![CTE_result_image](../img/CTE_.png)
 
@@ -69,6 +71,8 @@ Both nested inner queries above are _**exactly**_ the same. All we're doing is a
 
 ### The Common Table Expression (CTE) Approach
 
+My code for this approach is modified from the code in the course: [CTE-Approach](../Videos/29-CTEs_Part_2_of_2-Using_Common_Data_Expression.sql)
+
 In the next video, Travis demonstrates the CTE approach which starts with using a "WITH" clause followed by the alias of the first query.
 
 ![CTE_Step_1_Screenshot](../img/CTE_%20003.png)
@@ -78,7 +82,7 @@ Essentially this runs our first query and gives it an alias as "Step1" and this 
 
 ![Step_2_CTE_Screenshot](../img/CTE_%20004.png)
 
-The benefit of first writing subqueries begins to make sense when we go to the next step which is to grab the code from the next outermost query in the subqueries we wrote. Which means we pull both the previous query and the query surrounding it. In Step2 of the CTE process we just reference the first result set by the alias name. This is much easier to read and less redundant than nesting a duplicate subquery.
+The benefit of first writing subqueries begins to make sense when we go to the next step which is to grab the code from the next outermost query in the subqueries we wrote. Which means we pull both the previous query and the query surrounding it. In Step2 of the CTE process, we just reference the first result set by the alias name. This is much easier to read and less redundant than nesting a duplicate subquery.
 
 The last step is changing the result part of the query so that we get the derived columns we need.
 
